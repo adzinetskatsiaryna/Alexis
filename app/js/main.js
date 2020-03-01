@@ -59,7 +59,7 @@ menuItem.forEach(function(btn) {
   });
 });
 
-/*tab*/
+/*tab   */
 
 function Tabs() {
   var bindAll = function() {
