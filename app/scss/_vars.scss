@@ -1,0 +1,47 @@
+$color-red: #fc5f45;
+$color-azure: #38c695;
+$color-purple: #b27cf5;
+$color-yellow: #feb960;
+$color-body: #fff;
+$color-p: #272727;
+$color-h: #313131;
+$font-p: 'Poppins', sans-serif;
+$font-h: 'Libre Baskerville', serif;
+%item-h2{
+    font-family: $font-h;
+    font-weight: 700px;
+    font-size: 50px;
+    color: $color-h;
+}
+%item-p{
+    font-family: $font-p;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.6;
+    color: $color-p;
+}
+%item-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $font-p;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 5;
+    color: #fff;
+    width: 180px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: $color-red;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+%item-buttonmedia{
+    width: 80px;
+    height: 30px;
+}
+%item-h2media{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
