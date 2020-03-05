@@ -256,16 +256,17 @@ header {
 
 /*section Home*/
 
-h1 {
-    font-family: $font-h;
-    font-size: 60px; 
-    font-weight: 400;
-    color: #fff;
-    max-width: 818px;
-    width: 100%;
-    margin: 0 0 49px 0;
-}
+
 .home {
+    h1 {
+        font-family: $font-h;
+        font-size: 60px; 
+        font-weight: 400;
+        color: #fff;
+        max-width: 818px;
+        margin: 0 0 49px 0;
+        overflow-x: hidden;
+    }
     background-image: url(../img/bg-home.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -1313,6 +1314,7 @@ h1 {
         box-sizing: border-box;
         text-align: center; 
         max-width: 360px;
+        margin: 0 10px;
         h3{
             font-family: $font-p;
             font-size: 20px;
@@ -1455,6 +1457,7 @@ h1 {
             display: flex;
             align-items: center;
             justify-content: center;
+            padding-left: 0;
 
             li{
                 list-style: none;
@@ -1481,8 +1484,7 @@ h1 {
                 }
             }
         }
-    }
-       
+    }   
 }
 
 /*Testimonials.*/
