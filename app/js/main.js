@@ -59,7 +59,7 @@ menuItem.forEach(function(btn) {
   });
 });
 
-/*tab   */
+/*tab*/
 
 function Tabs() {
   var bindAll = function() {
@@ -185,30 +185,22 @@ $(document).ready(function(){
 
 /*slider__pricinng*/
 
-$(document).ready(function(){ 
-$('.table-slider').slick({
+$('.pricing-slider').slick({
   infinite: false,
-  slidesToScroll: 1,
   slidesToShow: 3,
+  slidesToScroll: 1,
   responsive: [
     {
       breakpoint: 1000,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        infinite: true,
-        arrows: true,
-      }
-    },
-    {
-      breakpoint: 660,
-      settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
-        arrows: true,
+        arrows: false,
+        dots:true,
       }
     },
   ]
-})
 });
+
+  

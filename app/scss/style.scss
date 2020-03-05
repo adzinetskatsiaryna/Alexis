@@ -10,11 +10,11 @@ body {
 
 .container {
     max-width: 1170px;
-    padding: 0 10px;
+    padding: 0 15px;
     width: 100%;
     margin: 0 auto;  
     box-sizing: border-box;
-    overflow-x: hidden;
+   
 
 }
 ul {
@@ -159,7 +159,7 @@ header {
             font-family: $font-p;
             font-weight: 500;
             font-size: 14px;
-            line-height: 1.6;
+            
             color: $color-p;
             transition: linear .3s;
             &:hover {
@@ -261,7 +261,8 @@ h1 {
     font-size: 60px; 
     font-weight: 400;
     color: #fff;
-    padding: 0 165px;
+    max-width: 818px;
+    width: 100%;
     margin: 0 0 49px 0;
 }
 .home {
@@ -345,38 +346,67 @@ h1 {
 .about-us {
     background-color: #fff;
     padding: 149px 0 151px;
-    
+
     .container {
         display: flex;
-		flex-direction: row;
-        justify-content: flex-end;
-        background-image: url(../img/about-icon.jpg);
-        background:  linear-gradient(to top, rgba(252, 95, 69, 0.2), rgba(0, 0, 0, 0.5)), url(../img/about-icon.jpg);
-        /*border: solid 10px rgba(0, 0, 0, 0.2);
-        background-clip: border-box;*/
-        background-repeat: no-repeat;
-        background-size: 555px auto;    
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
     }
+
+    .backgraund{
+        min-height: 700px;
+        flex-basis: 555px;
+        flex-shrink: 2;
+        background:  linear-gradient(to top, rgba(252, 95, 69, 0.3) 0%,), url(../img/about-icon.jpg);
+        background-size: 555px;
+        border: solid 10px rgba(0, 0, 0, 0.2);
+        box-sizing: border-box;
+        background-clip: border-box;
+        
+    }
+   
     .information {
         box-sizing: border-box;
         padding: 94px 83px 106px;
-        margin: 75px 0 75px 0;
-        flex-basis: 652px;	
+        max-width: 652px;
+        flex-shrink: 3;	
         box-shadow: 0px 0px 20px rgba(0,0,0,0.05);
         background-color: #fff;
         border-bottom: 3px solid transparent;
         border-image: linear-gradient(to right, $color-red 0%, $color-red 25%, $color-azure 25%, $color-azure 50%, $color-purple 50%, $color-purple 75%, $color-yellow 75%, $color-yellow 100%) 1 1;
+        position: absolute;
+        right: 0;
+        &::after{
+            content: "";
+            display: block;
+            width: 256px;
+            height: 199px;
+            background-image: url(../img/01.png);
+            background-repeat: no-repeat;
+            position: absolute;
+            background-size: cover;
+            background-position: center;
+            top: 0px;
+            left: 0px;
+            z-index: 1;
+        }
+        
      
-        & h2{
+        h2{
             @extend %item-h2;
             margin: 0 0 48px 0;
+            z-index: 20; 
+            position: relative;  
         }
 
-        & p {
+        p {
             @extend %item-p;
             margin-top: 0;
+            position: relative;
+            z-index: 20;
         }
-        & p:last-child{
+        p:last-child{
             margin-bottom: 0;
         }
     }    
@@ -547,6 +577,7 @@ h1 {
     .btn-play-main{
         width: 86px;
         height: 86px;
+        cursor: pointer;
         background: url(../img/arrow-video.svg) no-repeat center;
         background-size: cover;
         border: transparent;
@@ -711,7 +742,7 @@ h1 {
         grid-column-end: 4;
         grid-row-start: 4;
         grid-row-end: 4;
-        
+       
     }
 
     .portfolio-item{
@@ -728,7 +759,7 @@ h1 {
             opacity: 1;
         }
         
-        &:hover p{
+        &:hover .title{
             transform: translateY(0);
             opacity: 1;   
         }
@@ -742,7 +773,7 @@ h1 {
             object-fit: cover;
             transform: translate(0%, -50%);
         }    
-        p{
+        .title{
             opacity: 0;
             position: absolute;
             left: 0;
@@ -757,10 +788,13 @@ h1 {
             color: #313131;
             transform: translateY(100%) translateY(1px);
             transition: all .7s;
-            margin: 0; 
+             
             display: flex;  
             align-items: center; 
             justify-content: center;
+            p{
+                margin: 0;
+            }
         }
     }
 
@@ -805,6 +839,7 @@ h1 {
     background-color: #fff;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
     cursor: pointer;
+    outline: none;
     flex-basis: 25%;
     max-width: 263px;
     width: 100%;
@@ -1268,36 +1303,24 @@ h1 {
         margin: 0 0 77px 0;
     }
 
-    .table-pricing {
+    .table-pricing{
         display: flex;
-        justify-content: space-between;
-        align-items: center; 
-        margin: 0 -15px;
-    }
-    .table__pricing_column{ 
-        flex-basis: 33.33%; 
-        padding: 0 15px;
-      
-    }
-    .table__element {  
-        display: flex;  
         flex-direction: column;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
         box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
         background-color: #fff;   
         box-sizing: border-box;
         text-align: center; 
-        padding: 36px 82px 37px; 
-         
+        max-width: 360px;
         h3{
             font-family: $font-p;
             font-size: 20px;
             font-weight: 500;
             color: $color-h;
             margin: 0 0 26px 0;
+            padding-top: 36px
         }
-
         p{
             font-family: $font-p;
             font-size: 13px;
@@ -1308,7 +1331,6 @@ h1 {
                 font-size: 25px;
             }
         }
-
         ul, ol{
             @extend %item-p;
             line-height: 2.5;
@@ -1325,8 +1347,7 @@ h1 {
         span {
             font-weight: bold;
         }
-
-        .table__cost {
+        .table-cost {
             max-width: 100px;
             width: 100%;
             height: 100px;
@@ -1351,21 +1372,18 @@ h1 {
                 right: 10;
             }
         }
-    }
-
-    .table__element_1 {
-        border-top: solid 3px $color-azure;
-        margin-right: 30px;
        
-    
-        .table__button {
+    }
+    .table-pricing-1{
+        border-top: solid 3px $color-azure;
+
+        .table-button {
             @extend %item-button;
             border: 2px solid $color-azure;
             background-color: transparent;
             color: $color-azure;
-            margin: 40px 0 0 0;
-            
-
+            text-align: center;
+            margin: 40px 0 37px 0;
             &:hover{
                 transform: scale(1.15);
                 transition: all .4s;
@@ -1373,7 +1391,7 @@ h1 {
             }
         }
         
-        .table__cost_1{
+        .table-cost-1{
             background-color: $color-azure;
 
             &::after{
@@ -1382,13 +1400,11 @@ h1 {
         }
     }
 
-    .table__element_2 { 
+    .table-pricing-2 { 
         border-top: solid 3px $color-red;
-        margin-right: 30px;
-    
-        .table__button {
+        .table-button {
             @extend %item-button;
-            margin: 40px 0 0 0;
+            margin: 40px 0 37px 0;
 
             &:hover{
                 transform: scale(1.15);
@@ -1396,7 +1412,7 @@ h1 {
                 box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5); 
             }
         }
-        .table__cost_2{
+        .table-cost-2{
             background-color: $color-red;
 
             &::after{
@@ -1405,17 +1421,15 @@ h1 {
         }
         
     }
-
-    .table__element_3{
+    .table-pricing-3{
         border-top: solid 3px $color-purple;
-       
-        
-        .table__button {
+         
+        .table-button {
             @extend %item-button;
             border: 2px solid $color-purple;
             background-color: transparent;
             color: $color-purple;
-            margin: 40px 0 0 0;
+            margin: 40px 0 37px 0;
             
 
             &:hover{
@@ -1425,52 +1439,51 @@ h1 {
             }
         }
 
-        .table__cost_3{
+        .table-cost-3{
             background-color: $color-purple;
 
             &::after{
                 border-color:$color-purple;
             }
         }
-    }
-}
-.table-slider{
-    position: relative;
-    .slick-next::before{
-        content: '';
-        display: block;
-        height: 100%;
-        background-image: url(../img/arrow_right.svg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        width: 25px;
-        height: 30px;
-        
-    }
-    .slick-prev::before{
-        content: '';
-        display: block;
-        height: 100%;
-        background-image: url(../img/arrow-left.svg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        width: 25px;
-        height: 30px;
-    }
-    .slick-arrow, .slick-next, .slick-prev{
-        z-index: 200;
-        font-size: 0;
-        padding: 0;
-        border: none;
-        background-color: transparent;
-    }
+    } 
     .slick-list{
-        overflow-x: hidden;
+        overflow: hidden;
     }
-}
+    .pricing-slider{
+        .slick-dots{
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
+            li{
+                list-style: none;
+                margin: 0 7px;               
+            }
+            .slick-active{
+                button{
+                   background-color: #fc5f45;
+                }
+                button::before{
+                    opacity: 1;
+                }
+            }
+            button {
+                font-size: 0;
+                position: relative;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                border: 1px solid $color-h;
+                background-color: #f7f7f7;
+                &:focus{
+                    outline: none;
+                }
+            }
+        }
+    }
+       
+}
 
 /*Testimonials.*/
 
@@ -1493,15 +1506,9 @@ h1 {
     }
 
     .slider__content{
-        background-repeat: no-repeat;
-        background-clip: content-box;
-        background-origin: content-box;
-        background-position: left top;
-        background-size: 420px auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
     }
 
     .slider__text{
@@ -1510,7 +1517,6 @@ h1 {
         background-color: #fff;  
         border-bottom: solid 3px transparent;  
         padding: 41px 76px 39px 55px;
-        margin: 39px 0;
         position: relative;
         max-width: 750px;
         
@@ -1559,8 +1565,19 @@ h1 {
             margin: 0;
         }  
     }
-
-    .slider__content_1{
+    .slider__icon{
+        max-width: 399px;
+        width: 100%;
+        min-height: 384px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        outline: solid 10px rgba(0, 0, 0, 0.2);
+        outline-offset: -10px;
+        box-sizing: border-box;
+        background-clip: border-box;
+    }
+    .slider__icon_1{
         background-image: linear-gradient(to top, rgba(252,95,69,0.6) 0%,rgba(0,0,0,0.5) 100%), url(../img/testimonials-icon-1.jpg);
     }
    .slider__text_1{ 
@@ -1571,7 +1588,7 @@ h1 {
         }
     }
 
-    .slider__content_2{
+    .slider__icon_2{
         background-image: linear-gradient(to top, rgba(252,95,69,0.6) 0%,rgba(0,0,0,0.5) 100%), 
         url(../img/testimonials-icon-2.jpg); 
     }
@@ -1582,7 +1599,7 @@ h1 {
             color: $color-azure;  
         }
     }
-    .slider__content_3{
+    .slider__icon_3{
         background-image: linear-gradient(to top, rgba(252,95,69,0.6) 0%,rgba(0,0,0,0.5) 100%), url(../img/testimonials-icon-3.jpg); 
     }
     .slider__text_3{ 
@@ -1593,7 +1610,7 @@ h1 {
         }
     }
 
-    .slider__content_4{
+    .slider__icon_4{
         background-image: linear-gradient(to top, rgba(252,95,69,0.6) 0%,rgba(0,0,0,0.5) 100%), url(../img/testimonials-icon-4.jpg); 
     }
     .slider__text_4{ 

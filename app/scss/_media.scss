@@ -8,7 +8,6 @@
    
     h1{
         font-size: 50px;
-        padding: 0 100px;
         margin-bottom: 50px;
     }
     .home{
@@ -20,12 +19,14 @@
     .about-us{
         padding: 80px 0;
         .information{
-            padding: 50px 45px 55px;
-            margin: 75px 0;
+            padding: 50px 30px;
             h2{
                 font-size: 30px;
                 margin-bottom: 20px;
             }
+        }
+        .backgraund{
+            min-height: 500px;
         }
     }
     .our-focus{
@@ -53,11 +54,11 @@
             margin-bottom: 30px;
         }
         p{
-            margin-bottom: 40px;
+            margin-bottom: 40px; 
         }
         .portfolio-box{
-            grid-row-gap: 17px;
-            grid-column-gap: 15px;
+            grid-row-gap: 10px;
+            grid-column-gap: 10px;
         }
     }
     .our-team{
@@ -108,8 +109,8 @@
         p{
             margin-bottom: 40px;
         }
-        .table__element{
-           padding: 30px 50px; 
+        .table-pricing{
+            max-width: 300px;
         }
     }
     .testimonials{
@@ -120,13 +121,23 @@
         }
         p{
             margin-bottom: 40px;
-        }
-        .slider__content{
-            background-size: 370px auto;
+            
         }
         .slider__text{
-            max-width: 650px;
-            padding: 40px 20px;
+            padding: 30px 20px;
+            p:first-child{
+                margin-bottom: 20px;
+                span{
+                    bottom: -80px;
+                }
+            }
+            p:nth-of-type(2){
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+            h3{
+                font-size: 16px;
+            }
         }
 
     }
@@ -187,14 +198,48 @@
     h1{
         padding: 0 80px;
     }
-    .portfolio .portfolio-item img{
-        width: 30px;
-        height: 30px;
-        transform: translate(0%, -50%);
+
+    .about-us{
+        padding: 80px 0;
+        .information{
+            padding: 50px 30px;
+            flex-basis: 500px;
+            box-shadow: none;
+            background-color: transparent;
+            border: none;
+            &::after{
+                display: none;
+            }
+            h2{
+                font-size: 30px;
+                margin-bottom: 20px;
+            }
+        }
     }
-    .portfolio .portfolio-item p{
-        height: 30px;
+   
+
+    .portfolio {
+        .portfolio-item{
+            img{
+            width: 30px;
+            height: 30px;
+            transform: translate(0%, -50%);
+            }
+            .title{
+                height: 30px;
+                p{
+                    font-size: 12px;
+                }
+            }
+        }
+        .portfolio-box{
+            grid-template-rows: repeat(4, 40vw); 
+            grid-row-gap: 5px;
+            grid-column-gap: 5px; 
+        }
+       
     }
+    
     .content-tab{
         padding: 25px;
         h3{
@@ -242,9 +287,11 @@
             }
         }
     }
+
     .our-blog .blog{
         padding: 20px 15px;
     }
+
    
 }
 @media all and (max-width: 768px){
@@ -333,6 +380,7 @@
 }
 @media all and (max-width: 660px){
     h1{
+        font-size: 40px;
         padding: 0 50px;
         margin-bottom: 40px;
     }
@@ -341,17 +389,83 @@
     }
     
     .tabs{
-        flex-wrap: wrap;
-        justify-content: space-around;
         margin-bottom: 20px;
+        img{
+            border-radius: 50%;
+        }
        
     }
     .content-nav-tab{
-        flex-basis: 50%;
-        &:first-child, &:nth-child(2){
-            margin-bottom: 15px;
+        max-width: 130px;
+        width: 100%;
+        box-shadow: none;
+        background-color: transparent;
+        border-radius: 50%;
+        border: none;
+        .images-1{
+            border-radius: 50%;
+            &::after{
+                border-radius: 50%;
+            }
         }
-       
+        .images-2{
+            border-radius: 50%;
+            &::after{
+                border-radius: 50%;
+            }
+        }
+        .images-3{
+            border-radius: 50%;
+            &::after{
+                border-radius: 50%;
+            }
+        }
+        .images-4{
+            border-radius: 50%;
+            &::after{
+                border-radius: 50%;
+            }
+        }
+        &:first-child {
+            border-bottom: none;
+            h3{
+                display: none;
+            } 
+            p{
+                display: none;
+            } 
+            
+        }
+        &:nth-child(2){
+            border-bottom: none;
+
+            h3{
+                display: none;
+            }
+            p{
+                display: none;
+            }
+    
+        }
+        &:nth-child(3) {
+            border-bottom: none;
+
+            h3{
+                display: none;
+            }
+            p{
+                display: none;
+            }
+        }
+        &:last-child{
+            border-bottom: none; 
+            h3{
+                display: none;
+            }
+            p{
+                display: none;
+            } 
+        }
     }
     .content-nav-tab.active::after{
         display: none;
@@ -372,12 +486,42 @@
     .video .btn-play-main::after{
         font-size: 20px;
     }
+    .testimonials{
+        .slider__icon{
+            max-width: 150px;
+            min-height: 150px;
+            border-radius: 50%;
+            outline: none;
+        } 
+        .slider__text{
+            padding: 15px 10px;
+            p:first-child{
+                font-size: 13px;
+                margin-bottom: 10px;
+            }
 
+        }
+
+    }
+    .worc-steps{
+        .content-1, .content-2, .content-3, .content-4{
+            background: none;
+        }
+        p{
+            margin-bottom: 70px;
+        }
+        .item {
+            
+            h3{
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
+        }
+    }
 }
 @media all and (max-width: 450px){
     h1 {
         padding: 0 20px;
-        font-size: 50px;
     }
     .home{
         
@@ -438,18 +582,6 @@
             }
         }
     }
-    .worc-steps{
-        
-        p{
-            margin-bottom: 70px;
-        }
-        .item {
-            h3{
-                font-size: 20px;
-                margin-bottom: 15px;
-            }
-        }
-    }
     .select-us{
         .box-comtainer{
             grid-template-columns: repeat(1, 1fr);
@@ -459,6 +591,9 @@
             p{
                 margin: 0 20px 0 0;
                 text-align: left;
+            }
+            a{
+                font-size: 13px;
             }
         }
     }
@@ -520,17 +655,24 @@
             grid-row: 6 / 7;
         }
     }
-   
-}
-@media all and (max-width: 1000px){
-    .pricing{
-        .table-pricing{
-            margin: 0;
-        } 
-        .table__pricing_column{
-            padding: 0;
-            flex-basis: 30%;
+    .testimonials{
+        .slider__icon{
+            display: none;
+        }
+        .slider__text{
+            p:first-child{
+                font-size: 15px;
+            }
         }
     }
 }
+@media all and (max-width: 1000px){
+    .pricing{
+        .pricing-slider{
+            max-width: 300px;
+            margin: 0 auto;
+        }
+    }    
+}
+
 
