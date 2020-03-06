@@ -3019,6 +3019,10 @@ header .menu-item:hover {
   padding-left: 20px;
 }
 
+.our-blog .blog-picture a {
+  color: #fc5f45;
+}
+
 .our-blog .blog {
   background-color: #fff;
   padding: 33px 51px 33px 38px;
