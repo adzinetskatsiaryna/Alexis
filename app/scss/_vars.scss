@@ -12,6 +12,8 @@ $font-h: 'Libre Baskerville', serif;
     font-weight: 700px;
     font-size: 50px;
     color: $color-h;
+    position: relative;
+    z-index: 10;
 }
 %item-p{
     font-family: $font-p;
@@ -19,6 +21,8 @@ $font-h: 'Libre Baskerville', serif;
     font-weight: normal;
     line-height: 1.6;
     color: $color-p;
+    position: relative;
+    z-index: 10;
 }
 %item-button{
     display: flex;

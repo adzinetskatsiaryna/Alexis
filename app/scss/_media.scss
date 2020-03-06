@@ -25,6 +25,9 @@
                 font-size: 30px;
                 margin-bottom: 20px;
             }
+            &::after{
+                display: none;
+            }
         }
         .backgraund{
             min-height: 500px;
@@ -181,6 +184,12 @@
             height: 150px;
         }
     }
+
+    .our-focus, .about-us, .portfolio, .our-team,  .worc-steps, .pricing, .testimonials, .select-us,.our-blog, .contact{
+        &::after{
+            display: none;
+        }
+    } 
 
 }
 
