@@ -191,7 +191,7 @@ $('.pricing-slider').slick({
   slidesToScroll: 1,
   responsive: [
     {
-      breakpoint: 1000,
+      breakpoint: 1001,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,

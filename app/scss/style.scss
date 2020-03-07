@@ -1384,12 +1384,15 @@ header {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        text-align: center;
         box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
         background-color: #fff;   
         box-sizing: border-box;
         text-align: center; 
         max-width: 360px;
-        margin: 0 10px;
+        margin: 0 20px 0 10px;
+        
+        
         h3{
             font-family: $font-p;
             font-size: 20px;
@@ -1453,6 +1456,7 @@ header {
     }
     .table-pricing-1{
         border-top: solid 3px $color-azure;
+       
 
         .table-button {
             @extend %item-button;
@@ -1461,6 +1465,7 @@ header {
             color: $color-azure;
             text-align: center;
             margin: 40px 0 37px 0;
+            
             &:hover{
                 transform: scale(1.15);
                 transition: all .4s;
@@ -1479,9 +1484,12 @@ header {
 
     .table-pricing-2 { 
         border-top: solid 3px $color-red;
+        
         .table-button {
             @extend %item-button;
             margin: 40px 0 37px 0;
+            border: 2px solid  $color-red;
+            
 
             &:hover{
                 transform: scale(1.15);
@@ -1508,7 +1516,6 @@ header {
             color: $color-purple;
             margin: 40px 0 37px 0;
             
-
             &:hover{
                 transform: scale(1.15);
                 transition: all .4s;
@@ -1527,12 +1534,21 @@ header {
     .slick-list{
         overflow: hidden;
     }
+    .pricing-slid{
+        text-align: center;
+    }
     .pricing-slider{
+        margin: 0 -10px;
+        .pricing-slid{
+            margin: 0 20px 0 10px;
+            text-align: center;
+        }
         .slick-dots{
             display: flex;
             align-items: center;
             justify-content: center;
             padding-left: 0;
+            margin-bottom: 0;
 
             li{
                 list-style: none;
@@ -1540,10 +1556,8 @@ header {
             }
             .slick-active{
                 button{
-                   background-color: #fc5f45;
-                }
-                button::before{
-                    opacity: 1;
+                   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.9) inset;
+                   border: 1px solid rgba(38, 39, 50, 0.85);
                 }
             }
             button {
@@ -1552,7 +1566,8 @@ header {
                 width: 15px;
                 height: 15px;
                 border-radius: 50%;
-                border: 1px solid $color-h;
+                border: 1px solid transparent;
+                box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5) inset;
                 background-color: #f7f7f7;
                 &:focus{
                     outline: none;
@@ -1725,6 +1740,9 @@ header {
             display: flex;
             align-items: center;
             justify-content: flex-end;
+            margin-bottom: 0;
+            padding-left: 0;
+            margin-top: 24px;
 
             li{
                 list-style: none;

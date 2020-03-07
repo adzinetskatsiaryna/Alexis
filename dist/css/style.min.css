@@ -31,6 +31,8 @@
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 600;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: #fff;
   width: 180px;
   height: 50px;
@@ -2328,6 +2330,7 @@ header .menu-item:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
   -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
           box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
   background-color: #fff;
@@ -2335,7 +2338,7 @@ header .menu-item:hover {
           box-sizing: border-box;
   text-align: center;
   max-width: 360px;
-  margin: 0 10px;
+  margin: 0 20px 0 10px;
 }
 
 .pricing .table-pricing h3 {
@@ -2445,6 +2448,7 @@ header .menu-item:hover {
 
 .pricing .table-pricing-2 .table-button {
   margin: 40px 0 37px 0;
+  border: 2px solid #fc5f45;
 }
 
 .pricing .table-pricing-2 .table-button:hover {
@@ -2500,6 +2504,19 @@ header .menu-item:hover {
   overflow: hidden;
 }
 
+.pricing .pricing-slid {
+  text-align: center;
+}
+
+.pricing .pricing-slider {
+  margin: 0 -10px;
+}
+
+.pricing .pricing-slider .pricing-slid {
+  margin: 0 20px 0 10px;
+  text-align: center;
+}
+
 .pricing .pricing-slider .slick-dots {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2511,6 +2528,7 @@ header .menu-item:hover {
       -ms-flex-pack: center;
           justify-content: center;
   padding-left: 0;
+  margin-bottom: 0;
 }
 
 .pricing .pricing-slider .slick-dots li {
@@ -2519,11 +2537,9 @@ header .menu-item:hover {
 }
 
 .pricing .pricing-slider .slick-dots .slick-active button {
-  background-color: #fc5f45;
-}
-
-.pricing .pricing-slider .slick-dots .slick-active button::before {
-  opacity: 1;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.9) inset;
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.9) inset;
+  border: 1px solid rgba(38, 39, 50, 0.85);
 }
 
 .pricing .pricing-slider .slick-dots button {
@@ -2532,7 +2548,9 @@ header .menu-item:hover {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  border: 1px solid #313131;
+  border: 1px solid transparent;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5) inset;
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5) inset;
   background-color: #f7f7f7;
 }
 
@@ -2735,6 +2753,9 @@ header .menu-item:hover {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  margin-bottom: 0;
+  padding-left: 0;
+  margin-top: 24px;
 }
 
 .testimonials .slider .slick-dots li {
@@ -3555,7 +3576,7 @@ footer .social-icon img {
   }
 }
 
-@media all and (max-width: 845px) {
+@media all and (max-width: 875px) {
   header .menu-dekstop {
     display: none;
   }
@@ -3565,6 +3586,9 @@ footer .social-icon img {
   header {
     height: 50px;
   }
+}
+
+@media all and (max-width: 845px) {
   .about-us {
     padding: 80px 0;
   }
@@ -3748,8 +3772,11 @@ footer .social-icon img {
     padding: 0 50px;
     margin-bottom: 40px;
   }
-  .home, .our-focus, .about-us, .portfolio, .our-team, .worc-steps, .pricing, .testimonials, .select-us, .our-blog, .contact {
+  .home, .about-us, .our-focus, .portfolio, .our-team, .worc-steps, .pricing, .testimonials, .select-us, .our-blog, .contact {
     padding: 50px 0;
+  }
+  .worc-steps {
+    padding-bottom: 0;
   }
   .tabs {
     margin-bottom: 20px;
@@ -3901,6 +3928,9 @@ footer .social-icon img {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
+  .our-focus ul li:last-child {
+    margin-bottom: 0;
+  }
   .our-focus ul li img {
     margin-bottom: 20px;
   }
@@ -4005,8 +4035,16 @@ footer .social-icon img {
 }
 
 @media all and (max-width: 1000px) {
+  .pricing .table-pricing {
+    margin: 0 auto;
+    max-width: 300px;
+  }
   .pricing .pricing-slider {
     max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .pricing .pricing-slider .pricing-slid {
     margin: 0 auto;
   }
 }
