@@ -3060,13 +3060,21 @@ header .menu-item:hover {
   text-align: left;
   text-transform: uppercase;
   margin: 0 0 22px 0;
+  max-width: 290px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .our-blog .blog h3 span {
   font-size: 13px;
   color: #616161;
   text-transform: capitalize;
-  padding-left: 25px;
 }
 
 .our-blog .blog p {
@@ -3101,6 +3109,7 @@ header .menu-item:hover {
   color: #272727;
   line-height: 1.6;
   text-align: left;
+  max-width: 449px;
   margin: 0 0 34px 0;
 }
 
@@ -3978,6 +3987,9 @@ footer .social-icon img {
     grid-row: 1 / 2;
     min-height: 195px;
     height: 100%;
+  }
+  .our-blog .blog h3 a {
+    width: 100%;
   }
   .our-blog .blog1 {
     grid-column: 1 / 3;

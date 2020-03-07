@@ -2006,12 +2006,15 @@ header {
             text-align: left;
             text-transform: uppercase;
             margin: 0 0 22px 0;
+            max-width: 290px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
 
             & span{
                 font-size: 13px;
                 color: #616161;
                 text-transform: capitalize;
-                padding-left: 25px;
             }
         }
 
@@ -2046,6 +2049,7 @@ header {
           color: $color-p;
           line-height: 1.6;
           text-align: left;
+          max-width: 449px;
           margin: 0 0 34px 0;
         }
 
