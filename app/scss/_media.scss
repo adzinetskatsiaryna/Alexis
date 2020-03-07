@@ -312,6 +312,12 @@
         .blog-picture{
         grid-column: 1 / 2;
         grid-row: 1 / 3;
+            h3 {
+            padding-left: 15px;
+                a{
+                    width: 100%;
+                }
+            }    
         }
 
         .blog1{

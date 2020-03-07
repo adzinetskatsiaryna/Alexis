@@ -1979,13 +1979,15 @@ header {
             padding-left: 50px;
             text-transform: uppercase;
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
+            justify-content: space-between;
+            max-width: 281px;
 
             span{
                 font-size: 13px;
                 text-transform: capitalize;
                 color: #fff;
-                padding-left: 20px;
             }
         }
         a{
