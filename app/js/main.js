@@ -203,4 +203,21 @@ $('.pricing-slider').slick({
   ]
 });
 
-  
+/*readMore*/
+
+function readMore(){
+  let dots = document.querySelector(".dots");
+  let more = document.querySelector(".more");
+  let btn = document.querySelector(".btn");
+
+  if(dots.style.display === "none"){
+    dots.style.display = "inline";
+    btn.innerHTML = "read more";
+    more.style.display = "none";
+  } else{
+    dots.style.display = "none";
+    btn.innerHTML = "hide";
+    more.style.display = "inline";
+  }
+};
+

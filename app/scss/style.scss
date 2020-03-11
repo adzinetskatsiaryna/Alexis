@@ -1,6 +1,7 @@
 @import "vars";
 @import "fonts";
 @import "libs";
+@import "blog";
 
 body {
     background-color: $color-body;
@@ -137,6 +138,7 @@ header {
         z-index: 3;
         &:hover{
             opacity: 0.5;
+            transition: all .5s;
         }
         img{
         max-width: 100%;
@@ -296,7 +298,7 @@ header {
         margin-bottom: 83px;
         &:hover {
             transform: scale(1.15);
-            transition: all .4s;
+            transition: all .5s;
         }
     }
    ul {
@@ -1721,6 +1723,28 @@ header {
         background-image: linear-gradient(to top, rgba(252,95,69,0.6) 0%,rgba(0,0,0,0.5) 100%), url(../img/testimonials-icon-4.jpg); 
     }
     .slider__text_4{ 
+        border-bottom: solid 3px $color-yellow;         
+
+        p:last-child{
+            color: $color-yellow;  
+        }
+    }
+
+    .slider__icon_5{
+        background-image: linear-gradient(to top, rgba(252,95,69,0.6) 0%,rgba(0,0,0,0.5) 100%), url(../img/testimonials-icon-5.jpg);
+    }
+   .slider__text_5{ 
+        border-bottom: solid 3px $color-red;          
+
+        p:last-child{
+            color: $color-red;  
+        }
+    }
+
+    .slider__icon_6{
+        background-image: linear-gradient(to top, rgba(252,95,69,0.6) 0%,rgba(0,0,0,0.5) 100%), url(../img/testimonials-icon-6.jpg); 
+    }
+    .slider__text_6{ 
         border-bottom: solid 3px $color-yellow;         
 
         p:last-child{
