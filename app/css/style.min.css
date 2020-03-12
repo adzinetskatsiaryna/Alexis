@@ -660,6 +660,13 @@ footer .footer-content .footer-logo {
       align-self: center;
 }
 
+footer .footer-content .footer-logo img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
+}
+
 footer .footer-content .footer-adres1 h3 {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
@@ -3558,6 +3565,13 @@ footer .logo {
   display: block;
   max-width: 100%;
   cursor: pointer;
+}
+
+footer .logo img {
+  display: block;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 footer .logo:hover {

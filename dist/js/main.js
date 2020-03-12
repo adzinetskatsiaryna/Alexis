@@ -29,14 +29,14 @@ $("#menu-mobile").on("click", "a", function (event) {
 
 /*js-header-fixed*/
 
-/*window.onscroll = function showHeader() {
+window.onscroll = function showHeader() {
   let header = document.querySelector('.js-header');
   if(window.pageYOffset > 600){
       header.classList.add('js-header-fixed');
   } else{
       header.classList.remove('js-header-fixed');
   }
-}*/
+}
 
 /*mob menu*/
 

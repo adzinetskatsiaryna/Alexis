@@ -2279,6 +2279,11 @@ footer{
         display: block;
         max-width: 100%;
         cursor: pointer;
+        img{
+            display: block;
+            max-width: 100%;
+            object-fit: cover;
+        }
 
         &:hover{
             opacity: 0.5;
