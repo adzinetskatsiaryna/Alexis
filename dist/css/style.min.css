@@ -1166,7 +1166,7 @@ header .menu-item:hover {
   background-size: cover;
   background-position: center;
   position: relative;
-  padding: 165px 0 176px;
+  padding: 160px 0 170px;
 }
 
 .home h1 {
@@ -1593,7 +1593,7 @@ header .menu-item:hover {
 .video .btn-play-main::after {
   content: "Explore Our Awesomeness";
   font-family: "Poppins", sans-serif;
-  font-size: 30px;
+  font-size: 28px;
   text-align: center;
   position: absolute;
   width: 395px;
@@ -2244,7 +2244,7 @@ header .menu-item:hover {
   background-size: cover;
   background-position: center;
   position: relative;
-  padding: 147px 0 126px 0;
+  padding: 140px 0 126px 0;
 }
 
 .stats::after {
@@ -2325,7 +2325,7 @@ header .menu-item:hover {
 
 /*work-steps*/
 .worc-steps {
-  padding: 138px 0 150px;
+  padding: 140px 0 149px;
   position: relative;
 }
 
@@ -2496,7 +2496,7 @@ header .menu-item:hover {
 /*pricing*/
 .pricing {
   background-color: #f7f7f7;
-  padding: 142px 0 150px 0;
+  padding: 140px 0 149px 0;
   position: relative;
 }
 
@@ -2775,9 +2775,23 @@ header .menu-item:hover {
 
 /*Testimonials.*/
 .testimonials {
-  background-color: rgba(38, 39, 50, 0.85);
-  padding: 143px 0 150px 0;
+  background-image: url(../img/testimonials-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 140px 0 140px 0;
   position: relative;
+}
+
+.testimonials::before {
+  content: '';
+  background-color: rgba(38, 39, 50, 0.85);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 
 .testimonials::after {
@@ -2986,6 +3000,8 @@ header .menu-item:hover {
 
 .testimonials .slider {
   min-width: 0;
+  z-index: 200;
+  position: relative;
 }
 
 .testimonials .slider .slick-dots {
@@ -3046,10 +3062,10 @@ header .menu-item:hover {
   outline: none;
 }
 
-/*Select Us?*/
+/*Select Us*/
 .select-us {
   background-color: #fff;
-  padding: 146px 0 150px 0;
+  padding: 140px 0 149px 0;
   position: relative;
 }
 
@@ -3173,7 +3189,7 @@ header .menu-item:hover {
 /*Our Blog*/
 .our-blog {
   background-color: #f7f7f7;
-  padding: 147px 150px;
+  padding: 140px 149px;
   position: relative;
 }
 
