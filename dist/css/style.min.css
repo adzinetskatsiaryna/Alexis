@@ -2,15 +2,16 @@
 .blog-wr .blog-content h3, .about-us .information h2, .our-focus h2, .portfolio h2, .our-team h2, .content-tab h3, .worc-steps h2, .pricing h2, .testimonials h2, .select-us h2, .our-blog h2, .contact h2 {
   font-family: "Libre Baskerville", serif;
   font-weight: 700px;
-  font-size: 50px;
+  font-size: 55px;
+  letter-spacing: 2px;
   color: #313131;
   position: relative;
   z-index: 10;
 }
 
-header .container p, .blog-wr .blog-content p, .about-us .information p, .our-focus p, .our-focus ul li p, .portfolio p, .our-team p, .content-tab p, .worc-steps p, .pricing p, .pricing .table-pricing ul, .pricing .table-pricing ol, .testimonials p, .testimonials .slider__text p:first-child, .select-us p, .select-us .box h3, .our-blog p, .our-blog .blog1 p, .contact p {
+header .container p, .blog-wr .blog-content p, .about-us .information p, .our-focus p, .our-focus ul li p, .portfolio p, .our-team p, .content-tab p, .worc-steps p, .pricing p, .pricing .table-pricing ul li, .pricing .table-pricing ol li, .testimonials p, .testimonials .slider__text p:first-child, .select-us p, .select-us .box h3, .our-blog p, .our-blog .blog1 p, .contact p {
   font-family: "Poppins", sans-serif;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: normal;
   line-height: 1.6;
   color: #272727;
@@ -1028,8 +1029,9 @@ header ul li:first-child {
 
 header ul a {
   font-family: "Poppins", sans-serif;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 14px;
+  letter-spacing: 0.3px;
   color: #272727;
   -webkit-transition: linear .3s;
   -o-transition: linear .3s;
@@ -1157,16 +1159,17 @@ header .menu-item:hover {
   background-size: cover;
   background-position: center;
   position: relative;
-  padding: 175px 0 176px;
+  padding: 165px 0 176px;
 }
 
 .home h1 {
   font-family: "Libre Baskerville", serif;
-  font-size: 60px;
+  font-size: 68px;
   font-weight: 400;
+  letter-spacing: 3px;
   color: #fff;
   max-width: 818px;
-  margin: 0 0 49px 0;
+  margin: 0 0 50px 0;
   overflow-x: hidden;
 }
 
@@ -1198,7 +1201,7 @@ header .menu-item:hover {
 }
 
 .home .button {
-  margin-bottom: 83px;
+  margin-bottom: 84px;
 }
 
 .home .button:hover {
@@ -1247,6 +1250,7 @@ header .menu-item:hover {
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
+  letter-spacing: 1px;
 }
 
 .home ul li p {
@@ -1274,7 +1278,7 @@ header .menu-item:hover {
 /* section About-us */
 .about-us {
   background-color: #fff;
-  padding: 149px 0 151px;
+  padding: 140px 0 149px;
 }
 
 .about-us .container {
@@ -1309,8 +1313,8 @@ header .menu-item:hover {
 .about-us .information {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 94px 83px 106px;
-  max-width: 652px;
+  padding: 60px 79px 85px 78px;
+  max-width: 670px;
   -ms-flex-negative: 3;
       flex-shrink: 3;
   -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
@@ -1335,12 +1339,14 @@ header .menu-item:hover {
   background-size: cover;
   background-position: center;
   top: 0px;
-  left: 0px;
+  left: 2px;
   z-index: 1;
 }
 
 .about-us .information h2 {
-  margin: 0 0 48px 0;
+  margin: 0 0 40px 0;
+  font-size: 55px;
+  letter-spacing: 1.5px;
   z-index: 20;
   position: relative;
 }
@@ -1349,6 +1355,7 @@ header .menu-item:hover {
   margin-top: 0;
   position: relative;
   z-index: 20;
+  color: #616161;
 }
 
 .about-us .information p:last-child {
@@ -1358,7 +1365,7 @@ header .menu-item:hover {
 /*section Our Focus*/
 .our-focus {
   background-color: #f7f7f7;
-  padding: 148px 0 149px;
+  padding: 140px 0 149px;
   position: relative;
 }
 
@@ -1379,12 +1386,13 @@ header .menu-item:hover {
 
 .our-focus h2 {
   text-align: center;
-  margin: 0 0 39px 0;
+  margin: 0 0 20px 0;
 }
 
 .our-focus p {
   text-align: center;
   margin: 0 0 79px 0;
+  color: #616161;
 }
 
 .our-focus ul {
@@ -1424,24 +1432,25 @@ header .menu-item:hover {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 64px 34px 67px;
+  padding: 64px 34px 65px;
 }
 
 .our-focus ul li img {
-  margin-bottom: 31px;
+  margin-bottom: 20px;
 }
 
 .our-focus ul li h3 {
-  font-size: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 20px;
   color: #313131;
   font-weight: 600;
-  margin: 0 0 32px 0;
+  margin: 0 0 30px 0;
 }
 
 .our-focus ul li p {
   color: #616161;
   margin: 0;
+  font-size: 15px;
 }
 
 .our-focus ul li:hover {
@@ -1580,7 +1589,7 @@ header .menu-item:hover {
   font-size: 30px;
   text-align: center;
   position: absolute;
-  width: 389px;
+  width: 395px;
   color: #fff;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
   top: -50%;
@@ -1630,7 +1639,7 @@ header .menu-item:hover {
 /*portfolio*/
 .portfolio {
   background-color: #fff;
-  padding: 141px 0 149px 0;
+  padding: 140px 0 149px 0;
   position: relative;
 }
 
@@ -1651,7 +1660,7 @@ header .menu-item:hover {
 
 .portfolio h2 {
   text-align: center;
-  margin: 0 0 39px 0;
+  margin: 0 0 20px 0;
 }
 
 .portfolio p {
@@ -1847,7 +1856,7 @@ header .menu-item:hover {
 /*our-team*/
 .our-team {
   background-color: #f7f7f7;
-  padding: 151px 0 149px;
+  padding: 140px 0 149px;
   position: relative;
 }
 
@@ -1868,7 +1877,7 @@ header .menu-item:hover {
 
 .our-team h2 {
   text-align: center;
-  margin: 0 0 39px 0;
+  margin: 0 0 20px 0;
 }
 
 .our-team p {
@@ -2029,7 +2038,7 @@ header .menu-item:hover {
   color: #616161;
   font-size: 13px;
   text-align: center;
-  margin: 0 0 25px;
+  margin: 0 0 15px;
 }
 
 .content-nav-tab:nth-child(2) {
@@ -2050,7 +2059,7 @@ header .menu-item:hover {
   color: #616161;
   font-size: 13px;
   text-align: center;
-  margin: 0 0 25px;
+  margin: 0 0 15px;
 }
 
 .content-nav-tab:nth-child(3) {
@@ -2071,7 +2080,7 @@ header .menu-item:hover {
   color: #616161;
   font-size: 13px;
   text-align: center;
-  margin: 0 0 25px;
+  margin: 0 0 15px;
 }
 
 .content-nav-tab:last-child {
@@ -2092,7 +2101,7 @@ header .menu-item:hover {
   color: #616161;
   font-size: 13px;
   text-align: center;
-  margin: 0 0 25px;
+  margin: 0 0 15px;
 }
 
 .content-nav-tab.active {
@@ -2140,6 +2149,7 @@ header .menu-item:hover {
 }
 
 .content-tab p {
+  font-size: 15px;
   color: #272727;
   margin: 0;
   text-align: left;
@@ -2329,7 +2339,7 @@ header .menu-item:hover {
 
 .worc-steps h2 {
   text-align: center;
-  margin: 0 0 27px 0;
+  margin: 0 0 20px 0;
 }
 
 .worc-steps p {
@@ -2500,7 +2510,7 @@ header .menu-item:hover {
 
 .pricing h2 {
   text-align: center;
-  margin: 0 0 27px 0;
+  margin: 0 0 20px 0;
 }
 
 .pricing p {
@@ -2555,9 +2565,13 @@ header .menu-item:hover {
 }
 
 .pricing .table-pricing ul, .pricing .table-pricing ol {
-  line-height: 2.5;
   margin: 0;
   padding: 0;
+}
+
+.pricing .table-pricing ul li, .pricing .table-pricing ol li {
+  font-size: 13px;
+  line-height: 3;
 }
 
 .pricing .table-pricing ul li::before {
@@ -2568,6 +2582,7 @@ header .menu-item:hover {
 
 .pricing .table-pricing span {
   font-weight: bold;
+  font-size: 15px;
 }
 
 .pricing .table-pricing .table-cost {
@@ -2590,7 +2605,7 @@ header .menu-item:hover {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  margin: 0 0 44px 0;
+  margin: 0 0 35px 0;
 }
 
 .pricing .table-pricing .table-cost::after {
@@ -2613,7 +2628,7 @@ header .menu-item:hover {
   background-color: transparent;
   color: #38c695;
   text-align: center;
-  margin: 40px 0 37px 0;
+  margin: 25px 0 30px 0;
 }
 
 .pricing .table-pricing-1 .table-button:hover {
@@ -2640,7 +2655,7 @@ header .menu-item:hover {
 }
 
 .pricing .table-pricing-2 .table-button {
-  margin: 40px 0 37px 0;
+  margin: 25px 0 30px 0;
   border: 2px solid #fc5f45;
 }
 
@@ -2671,7 +2686,7 @@ header .menu-item:hover {
   border: 2px solid #b27cf5;
   background-color: transparent;
   color: #b27cf5;
-  margin: 40px 0 37px 0;
+  margin: 25px 0 30px 0;
 }
 
 .pricing .table-pricing-3 .table-button:hover {
@@ -2776,7 +2791,7 @@ header .menu-item:hover {
 .testimonials h2 {
   color: #fff;
   text-align: center;
-  margin: 0 0 39px 0;
+  margin: 0 0 20px 0;
 }
 
 .testimonials p {
@@ -2805,15 +2820,17 @@ header .menu-item:hover {
           box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
   background-color: #fff;
   border-bottom: solid 3px transparent;
-  padding: 41px 76px 39px 55px;
+  padding: 35px 76px 35px 55px;
   position: relative;
   max-width: 750px;
 }
 
 .testimonials .slider__text p:first-child {
+  font-size: 15px;
+  line-height: 1.6;
   color: #616161;
   text-align: left;
-  margin: 0 0 38px 0;
+  margin: 0 0 20px 0;
 }
 
 .testimonials .slider__text p:first-child span {
@@ -2824,8 +2841,8 @@ header .menu-item:hover {
   padding: 0;
   margin: 0;
   position: absolute;
-  bottom: -30px;
-  left: 0;
+  top: -190px;
+  left: -50px;
 }
 
 .testimonials .slider__text p:nth-of-type(2) {
@@ -2834,7 +2851,7 @@ header .menu-item:hover {
   color: #272727;
   text-align: left;
   font-weight: normal;
-  margin: 0 0 24px 0;
+  margin: 0 0 12px 0;
 }
 
 .testimonials .slider__text h3 {
@@ -2842,7 +2859,7 @@ header .menu-item:hover {
   font-size: 18;
   font-weight: 600;
   color: #272727;
-  margin: 0 0 13px 0;
+  margin: 0 0 10px 0;
 }
 
 .testimonials .slider__text p:last-child {
@@ -2976,12 +2993,12 @@ header .menu-item:hover {
           justify-content: flex-end;
   margin-bottom: 0;
   padding-left: 0;
-  margin-top: 24px;
+  margin-top: 0;
 }
 
 .testimonials .slider .slick-dots li {
   list-style: none;
-  margin: 0 7px;
+  margin-left: 7px;
 }
 
 .testimonials .slider .slick-dots .slick-active button {
@@ -3046,7 +3063,7 @@ header .menu-item:hover {
 
 .select-us h2 {
   text-align: center;
-  margin: 0 0 27px 0;
+  margin: 0 0 20px 0;
 }
 
 .select-us p {
@@ -3129,7 +3146,7 @@ header .menu-item:hover {
 }
 
 .select-us .box1, .select-us .box2, .select-us .box3 {
-  margin-bottom: 72px;
+  margin-bottom: 50px;
 }
 
 .select-us .box1 h3, .select-us .box2 h3, .select-us .box3 h3 {
@@ -3138,7 +3155,7 @@ header .menu-item:hover {
 }
 
 .select-us .box4, .select-us .box5, .select-us .box6 {
-  margin-bottom: 151px;
+  margin-bottom: 100px;
 }
 
 .select-us .box4 h3, .select-us .box5 h3, .select-us .box6 h3 {
@@ -3171,7 +3188,7 @@ header .menu-item:hover {
 .our-blog h2 {
   grid-column: 1 / -1;
   text-align: center;
-  margin: 0 0 27px 0;
+  margin: 0 0 20px 0;
 }
 
 .our-blog p {
@@ -3272,7 +3289,7 @@ header .menu-item:hover {
 
 .our-blog .blog {
   background-color: #fff;
-  padding: 33px 51px 33px 38px;
+  padding: 30px 51px 30px 38px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
@@ -3336,7 +3353,7 @@ header .menu-item:hover {
   line-height: 1.6;
   text-align: left;
   max-width: 449px;
-  margin: 0 0 34px 0;
+  margin: 0 0 25px 0;
 }
 
 .our-blog .blog1 p {
@@ -3411,7 +3428,7 @@ header .menu-item:hover {
 
 .contact h2 {
   text-align: center;
-  margin: 0 0 39px 0;
+  margin: 0 0 20px 0;
 }
 
 .contact p {
@@ -3475,7 +3492,7 @@ header .menu-item:hover {
   grid-column: 1 / -1;
   grid-row: 3 / 4;
   height: 100%;
-  height: 200px;
+  height: 160px;
   resize: none;
   margin-bottom: 26px;
 }
@@ -3534,7 +3551,7 @@ footer {
   -o-border-image: -o-linear-gradient(left, #fc5f45 0%, #fc5f45 25%, #38c695 25%, #38c695 50%, #b27cf5 50%, #b27cf5 75%, #feb960 75%, #feb960 100%) 1 1;
      border-image: -webkit-gradient(linear, left top, right top, from(#fc5f45), color-stop(25%, #fc5f45), color-stop(25%, #38c695), color-stop(50%, #38c695), color-stop(50%, #b27cf5), color-stop(75%, #b27cf5), color-stop(75%, #feb960), to(#feb960)) 1 1;
      border-image: linear-gradient(to right, #fc5f45 0%, #fc5f45 25%, #38c695 25%, #38c695 50%, #b27cf5 50%, #b27cf5 75%, #feb960 75%, #feb960 100%) 1 1;
-  padding: 63px 0;
+  padding: 55px 0;
 }
 
 footer .logo {

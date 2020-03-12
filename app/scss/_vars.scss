@@ -10,14 +10,15 @@ $font-h: 'Libre Baskerville', serif;
 %item-h2{
     font-family: $font-h;
     font-weight: 700px;
-    font-size: 50px;
+    font-size: 55px;
+    letter-spacing: 2px;
     color: $color-h;
     position: relative;
     z-index: 10;
 }
 %item-p{
     font-family: $font-p;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: normal;
     line-height: 1.6;
     color: $color-p;
