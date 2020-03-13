@@ -164,7 +164,7 @@ header {
             letter-spacing: 0.3px;
             color: $color-p;
             transition: linear .3s;
-            &:hover {
+            &:hover, .active {
             color: $color-red;
             text-shadow: 0 0 5px rgba(252, 95, 69, 0.5);
             }
@@ -174,6 +174,10 @@ header {
 
     .menu-mob {
         display: none;
+        li:hover{
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.25);
+        }
         .menu-btn {
             position: absolute;
             top: 10px;
@@ -185,7 +189,7 @@ header {
             cursor: pointer;
             z-index: 300;
             padding: 0;
-            &:hover{
+            &:focus{
                 outline: none;
             }
         }
@@ -244,9 +248,13 @@ header {
         display: block;
         transition-duration: 0.6s;
         padding: 15px 0;
-        &:hover{
-            background-color: rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        box-sizing: border-box;
+        &:focus{
+            outline: none;
         }
+
     }
 } 
  
@@ -373,7 +381,7 @@ header {
    
     .information {
         box-sizing: border-box;
-        padding: 60px 79px 85px 78px;
+        padding: 80px 79px 85px 78px;
         max-width: 670px;
         flex-shrink: 3;	
         box-shadow: 0px 0px 20px rgba(0,0,0,0.05);
@@ -392,15 +400,15 @@ header {
             position: absolute;
             background-size: cover;
             background-position: center;
-            top: 0px;
-            left: 2px;
+            top: 3px;
+            left: 3px;
             z-index: 1;
         }
         
      
         h2{
             @extend %item-h2;
-            margin: 0 0 40px 0;
+            margin: 0 0 27px 0;
             font-size: 55px;
             letter-spacing: 1.5px;
             z-index: 20; 
@@ -409,6 +417,8 @@ header {
 
         p {
             @extend %item-p;
+            font-size: 15px;
+            line-height: 1.8;
             margin-top: 0;
             position: relative;
             z-index: 20;
@@ -436,9 +446,10 @@ header {
         position: absolute;
         background-size: cover;
         background-position: center;
-        top: 6px;
+        top: 0;
         left: 40%;
         z-index: 1;
+        transform: translate(-50% -50%);
     }
 
     h2 {
@@ -1265,6 +1276,16 @@ header {
         box-sizing: border-box;
         max-width: 458px;
         width: 100%;
+        &::after{
+            position: absolute;
+            top: 40px;
+            left: 38px;
+            font-family: $font-h;
+            color: #e0e0e0;
+            font-size: 50px;
+            font-weight: bold;
+            z-index: 1;
+        }
            
     
         h3{
@@ -1274,6 +1295,8 @@ header {
             color: $color-p;
             text-align: left;
             margin: 0 0 24px 0;
+            position: relative;
+            z-index: 2;
         }
     
         p{
@@ -1289,21 +1312,33 @@ header {
             border-bottom: solid 3px $color-red;
             position: relative;
             bottom: 50px;
+            &::after{
+                content: "01";
+            }
         }
         .item-2{
             border-bottom: solid 3px $color-azure; 
             position: relative;
             bottom: 50px;
+            &::after{
+                content: "02";
+            }
         }
         .item-3{
             border-bottom: solid 3px $color-purple; 
             position: relative;
             bottom: 50px; 
+            &::after{
+                content: "03";
+            }
         }
         .item-4{
             border-bottom: solid 3px $color-yellow; 
             position: relative;
             bottom: 50px;
+            &::after{
+                content: "04";
+            }
         }
     .content-1{
         display: flex;
@@ -1427,8 +1462,8 @@ header {
             padding: 0;
             li{
                 @extend %item-p;
-                font-size: 13px;
-                line-height: 3;
+                font-size: 15px;
+                line-height: 2.5;
             }
         }
 
@@ -1652,7 +1687,7 @@ header {
         box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
         background-color: #fff;  
         border-bottom: solid 3px transparent;  
-        padding: 35px 76px 35px 55px;
+        padding: 35px 76px 35px 60px;
         position: relative;
         max-width: 750px;
         
@@ -1660,10 +1695,10 @@ header {
         p:first-child{
             @extend %item-p;
             font-size: 15px;
-            line-height: 1.6;
+            line-height: 1.8;
             color: #616161;
             text-align: left;
-            margin: 0 0 20px 0;
+            margin: 0 0 10px 0;
             
 
             span{
@@ -1674,7 +1709,7 @@ header {
                 padding: 0;
                 margin: 0;
                 position: absolute;
-                top: -190px;
+                top: -220px;
                 left: -50px;
             }
         }
@@ -1685,7 +1720,7 @@ header {
             color: $color-p;
             text-align: left;
             font-weight: normal;
-            margin: 0 0 12px 0;
+            margin: 0 0 10px 0;
         }
 
         h3{
@@ -1693,7 +1728,7 @@ header {
             font-size: 18;
             font-weight: 600;
             color: $color-p;
-            margin: 0 0 10px 0;
+            margin: 0 0 8px 0;
         }
         
         p:last-child{
@@ -2078,6 +2113,7 @@ header {
         p{
             font-family: $font-p;
             font-size: 15px;
+            line-height: 1.8;
             color: #616161;
             text-align: left;
             margin: 0;
@@ -2285,7 +2321,7 @@ footer{
     background-color: #3f4049;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     border-bottom: 3px solid transparent;
     box-sizing: border-box;
     border-image: linear-gradient(to right, $color-red 0%, $color-red 25%, $color-azure 25%, $color-azure 50%, $color-purple 50%, $color-purple 75%, $color-yellow 75%, $color-yellow 100%) 1 1;
@@ -2295,6 +2331,7 @@ footer{
         display: block;
         max-width: 100%;
         cursor: pointer;
+        align-self: center;
         img{
             display: block;
             max-width: 100%;
@@ -2352,7 +2389,7 @@ footer{
             font-size: 18px;
             font-weight: 500;
             color: $color-yellow;
-            margin: 0 0 55px 0; 
+            margin: 0 0 40px 0; 
         }
 
         a{

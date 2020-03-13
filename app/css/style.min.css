@@ -1045,13 +1045,18 @@ header ul a {
   transition: linear .3s;
 }
 
-header ul a:hover {
+header ul a:hover, header ul a .active {
   color: #fc5f45;
   text-shadow: 0 0 5px rgba(252, 95, 69, 0.5);
 }
 
 header .menu-mob {
   display: none;
+}
+
+header .menu-mob li:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.25);
 }
 
 header .menu-mob .menu-btn {
@@ -1067,7 +1072,7 @@ header .menu-mob .menu-btn {
   padding: 0;
 }
 
-header .menu-mob .menu-btn:hover {
+header .menu-mob .menu-btn:focus {
   outline: none;
 }
 
@@ -1147,10 +1152,14 @@ header .menu-item {
        -o-transition-duration: 0.6s;
           transition-duration: 0.6s;
   padding: 15px 0;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-header .menu-item:hover {
-  background-color: rgba(0, 0, 0, 0.25);
+header .menu-item:focus {
+  outline: none;
 }
 
 .js-header-fixed {
@@ -1320,7 +1329,7 @@ header .menu-item:hover {
 .about-us .information {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 60px 79px 85px 78px;
+  padding: 80px 79px 85px 78px;
   max-width: 670px;
   -ms-flex-negative: 3;
       flex-shrink: 3;
@@ -1345,13 +1354,13 @@ header .menu-item:hover {
   position: absolute;
   background-size: cover;
   background-position: center;
-  top: 0px;
-  left: 2px;
+  top: 3px;
+  left: 3px;
   z-index: 1;
 }
 
 .about-us .information h2 {
-  margin: 0 0 40px 0;
+  margin: 0 0 27px 0;
   font-size: 55px;
   letter-spacing: 1.5px;
   z-index: 20;
@@ -1359,6 +1368,8 @@ header .menu-item:hover {
 }
 
 .about-us .information p {
+  font-size: 15px;
+  line-height: 1.8;
   margin-top: 0;
   position: relative;
   z-index: 20;
@@ -1386,9 +1397,12 @@ header .menu-item:hover {
   position: absolute;
   background-size: cover;
   background-position: center;
-  top: 6px;
+  top: 0;
   left: 40%;
   z-index: 1;
+  -webkit-transform: translate(-50% -50%);
+      -ms-transform: translate(-50% -50%);
+          transform: translate(-50% -50%);
 }
 
 .our-focus h2 {
@@ -2366,6 +2380,17 @@ header .menu-item:hover {
   width: 100%;
 }
 
+.worc-steps .item::after {
+  position: absolute;
+  top: 40px;
+  left: 38px;
+  font-family: "Libre Baskerville", serif;
+  color: #e0e0e0;
+  font-size: 50px;
+  font-weight: bold;
+  z-index: 1;
+}
+
 .worc-steps .item h3 {
   font-family: "Poppins", sans-serif;
   font-size: 25px;
@@ -2373,6 +2398,8 @@ header .menu-item:hover {
   color: #272727;
   text-align: left;
   margin: 0 0 24px 0;
+  position: relative;
+  z-index: 2;
 }
 
 .worc-steps .item p {
@@ -2390,10 +2417,18 @@ header .menu-item:hover {
   bottom: 50px;
 }
 
+.worc-steps .item-1::after {
+  content: "01";
+}
+
 .worc-steps .item-2 {
   border-bottom: solid 3px #38c695;
   position: relative;
   bottom: 50px;
+}
+
+.worc-steps .item-2::after {
+  content: "02";
 }
 
 .worc-steps .item-3 {
@@ -2402,10 +2437,18 @@ header .menu-item:hover {
   bottom: 50px;
 }
 
+.worc-steps .item-3::after {
+  content: "03";
+}
+
 .worc-steps .item-4 {
   border-bottom: solid 3px #feb960;
   position: relative;
   bottom: 50px;
+}
+
+.worc-steps .item-4::after {
+  content: "04";
 }
 
 .worc-steps .content-1 {
@@ -2577,8 +2620,8 @@ header .menu-item:hover {
 }
 
 .pricing .table-pricing ul li, .pricing .table-pricing ol li {
-  font-size: 13px;
-  line-height: 3;
+  font-size: 15px;
+  line-height: 2.5;
 }
 
 .pricing .table-pricing ul li::before {
@@ -2841,17 +2884,17 @@ header .menu-item:hover {
           box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
   background-color: #fff;
   border-bottom: solid 3px transparent;
-  padding: 35px 76px 35px 55px;
+  padding: 35px 76px 35px 60px;
   position: relative;
   max-width: 750px;
 }
 
 .testimonials .slider__text p:first-child {
   font-size: 15px;
-  line-height: 1.6;
+  line-height: 1.8;
   color: #616161;
   text-align: left;
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
 }
 
 .testimonials .slider__text p:first-child span {
@@ -2862,7 +2905,7 @@ header .menu-item:hover {
   padding: 0;
   margin: 0;
   position: absolute;
-  top: -190px;
+  top: -220px;
   left: -50px;
 }
 
@@ -2872,7 +2915,7 @@ header .menu-item:hover {
   color: #272727;
   text-align: left;
   font-weight: normal;
-  margin: 0 0 12px 0;
+  margin: 0 0 10px 0;
 }
 
 .testimonials .slider__text h3 {
@@ -2880,7 +2923,7 @@ header .menu-item:hover {
   font-size: 18;
   font-weight: 600;
   color: #272727;
-  margin: 0 0 10px 0;
+  margin: 0 0 8px 0;
 }
 
 .testimonials .slider__text p:last-child {
@@ -3346,6 +3389,7 @@ header .menu-item:hover {
 .our-blog .blog p {
   font-family: "Poppins", sans-serif;
   font-size: 15px;
+  line-height: 1.8;
   color: #616161;
   text-align: left;
   margin: 0;
@@ -3565,9 +3609,9 @@ footer {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   border-bottom: 3px solid transparent;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -3581,6 +3625,8 @@ footer .logo {
   display: block;
   max-width: 100%;
   cursor: pointer;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 footer .logo img {
@@ -3646,7 +3692,7 @@ footer .social-icon h3 {
   font-size: 18px;
   font-weight: 500;
   color: #feb960;
-  margin: 0 0 55px 0;
+  margin: 0 0 40px 0;
 }
 
 footer .social-icon a {
@@ -3775,6 +3821,10 @@ footer .social-icon img {
     max-width: 350px;
     width: 100%;
   }
+  .worc-steps .item::after {
+    top: 0;
+    left: 0;
+  }
   .pricing {
     padding: 80px 0;
   }
@@ -3858,7 +3908,7 @@ footer .social-icon img {
   }
 }
 
-@media all and (max-width: 875px) {
+@media all and (max-width: 943px) {
   header .menu-dekstop {
     display: none;
   }
@@ -3905,8 +3955,8 @@ footer .social-icon img {
   }
   .portfolio .portfolio-box {
     grid-template-rows: repeat(4, 40vw);
-    grid-row-gap: 5px;
-    grid-column-gap: 5px;
+    grid-row-gap: 3px;
+    grid-column-gap: 3px;
   }
   .content-tab {
     padding: 25px;
@@ -4016,6 +4066,8 @@ footer .social-icon img {
   }
   footer .logo {
     margin: 0 0 15px 20px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
   footer .address1 {
     max-width: 90%;
@@ -4057,7 +4109,6 @@ footer .social-icon img {
 @media all and (max-width: 660px) {
   .home h1 {
     font-size: 40px;
-    padding: 0 50px;
     margin-bottom: 40px;
   }
   .home, .about-us, .our-focus, .portfolio, .our-team, .worc-steps, .pricing, .testimonials, .select-us, .our-blog, .contact {
@@ -4193,6 +4244,9 @@ footer .social-icon img {
   }
   .home ul li {
     margin-bottom: 20px;
+  }
+  .home ul li:last-child {
+    margin-bottom: 0;
   }
   .home ul li img {
     margin-bottom: 10px;
