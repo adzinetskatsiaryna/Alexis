@@ -1,4 +1,5 @@
 # Alexis
+https://adzinetskatsiaryna.github.io/Alexis/dist/index#
 Сайт Alexis сверстан по psd макету, который можно посмотреть 
 по адресу http://psd-html-css.ru/templates/alexis-psd-shablon-odnostranichnogo-sayta
 При написании использованы технологии CSS Flexbox и CSS Grid Layout. Локально подключены шрифты Google Fonts. 
