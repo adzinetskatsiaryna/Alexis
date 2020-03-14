@@ -5,7 +5,7 @@ https://adzinetskatsiaryna.github.io/Alexis/dist/index#
 При написании использованы технологии CSS Flexbox и CSS Grid Layout. Локально подключены шрифты Google Fonts. 
 Использованы изобрвжения в формате jpg, png, svg.
 Проект состоит из папок: 
-- основной папки app, которая используется для разработки, в ней будет хранится код;
+- основной папки app, которая используется для разработки, в ней хранится код;
 - dist в ней хранятся оптимизированные файлы преднознченные для продакшена;
 - node_modules.
 Сайт сосотоит из header, footer, 13 секций - Home, About-us, Our Focus, Video, Portfolio, Our-team, Stats, Work-steps, Pricing, 
